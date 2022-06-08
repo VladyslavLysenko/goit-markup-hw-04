@@ -1,0 +1,90 @@
+/* стили для portfolio.html */
+
+
+/* Buttons */
+
+.buttons{
+display: flex;
+justify-content: center;
+align-content: center;
+margin-bottom: 50px;
+
+}
+
+.btn-filtres{
+border: 0;
+}
+
+
+.btn-portfolio{
+    /* шрифт кнопки */
+    display:inline-block;
+    font-family:inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    min-width: 73px;
+    border: 0;
+    padding: 6px 22px;
+   
+    /* фон кнопки */
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.btn-item:not(:last-child){
+    margin-right: 8px;
+  
+}
+
+
+.btn-portfolio:hover,
+.btn-portfolio:focus{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--text-wh-color);
+    background: var(--primary-bg-color);
+    cursor: pointer;
+}
+/*  Projects */
+.projects.list{
+    display: flex;
+    flex-wrap: wrap;
+     gap: 30px; 
+    
+}
+
+.project-item {
+    flex-basis: calc((100% - 90px) / 3);
+    }
+
+.img-content{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+    min-width: 370px;
+}
+
+
+
+.projects-main{
+    padding-top: 34px;
+}
+
+
+.project-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2; 
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    margin-bottom: 4px;
+}
+
+.project-description{
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--primary-text-color);
+}
+
