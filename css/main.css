@@ -5,7 +5,11 @@
 /* Hero */
 
 .hero{
-    background: #2F303A;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url(../images/background-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -23,7 +27,6 @@
     margin-bottom: 30px ;
     margin-left: auto;
     margin-right: auto;
-   
 }
 /* Кнопка заказать услугу */
 
@@ -157,3 +160,76 @@ margin-right: 30px;
     padding-bottom: 30px;
     background-color: #FFFFFF;
 } 
+/* Постоянные клиенты */
+
+.clients.list{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.client-item{
+    display: flex;
+    width: 170px;
+    height: 92px;
+    gap: 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item:hover,.client-item:focus{
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+}
+
+.client-item-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.team-list-soc.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+}
+
+.team-soc-item{
+    width: 44px;
+    height: 44px;
+     gap: 10px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    
+}
+.team-soc-link:hover,
+.team-soc-link:focus{
+    background-color: var(--accent-color);
+    border-radius: 50px;
+}
+.team-soc-link:hover .team-icon,
+.team-soc-link:focus .team-icon{
+    fill: #FFFFFF;
+}
+
+
+
+.team-soc-link.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.team-icon{
+    fill: #AFB1B8;
+}
