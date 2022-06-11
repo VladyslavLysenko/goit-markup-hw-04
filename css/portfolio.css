@@ -60,10 +60,14 @@ border: 0;
 
 .project-item {
     flex-basis: calc((100% - 90px) / 3);
+
     }
 
 
-.project-link{display:block;}
+.project-link{
+    display:block;
+
+}
 
 .project-link:hover,
 .project-link:focus {
